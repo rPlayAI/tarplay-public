@@ -58,6 +58,8 @@ You need to start the head unit server again after the phone restarts or Android
 - **Portrait mode on:** Android Auto uses its own tall layout, with the app bar at the bottom. Good for a vertical phone mount.
 - **Portrait mode off:** the classic landscape car layout, with the app bar on the left.
 
+<img src="../screenshots/phoneauto-landscape.png" width="560" alt="PhoneAuto in landscape">
+
 The choice applies when a session starts. To switch, [end the session](#end-a-session), change the switch, and start again.
 
 ### During a session

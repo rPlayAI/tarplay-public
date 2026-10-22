@@ -18,6 +18,9 @@ This repository is for **releases, documentation and issues**. The source code i
   <img src="screenshots/phoneauto-portrait.png" height="360" alt="PhoneAuto in portrait">
   <img src="screenshots/carcast-setup.png" height="360" alt="CarCast Launcher setup">
 </p>
+<p>
+  <img src="screenshots/phoneauto-landscape.png" width="640" alt="PhoneAuto in landscape with Maps">
+</p>
 
 ## Install
 
