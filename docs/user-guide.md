@@ -14,7 +14,7 @@ PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast La
 
 ## What you need
 
-- An Android phone with Android 7.0 or later. Tested on a Pixel 9a (Android 17) and a Galaxy S24 Ultra (Android 15).
+- An Android phone with Android 7.0 or later. Tested on Pixel phones and a Samsung Galaxy S24 Ultra.
 - **Android Auto** from Google Play. Recent phones have it built in.
 - For CarCast Launcher: a CarCast receiver (an Android head unit, tablet, iPad or iPhone running [CarCast](https://github.com/rPlayAI/carcast-public)) on the same Wi-Fi.
 
