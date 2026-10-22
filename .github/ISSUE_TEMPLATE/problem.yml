@@ -1,0 +1,46 @@
+name: Problem report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - PhoneAuto
+        - CarCast Launcher
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version and where you got it
+      placeholder: "PhoneAuto 1.0 (3), GitHub APK / Google Play"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model and Android version
+      placeholder: "Pixel 9a, Android 17"
+    validations:
+      required: true
+  - type: input
+    id: aa
+    attributes:
+      label: Android Auto version
+      description: Android Auto settings › Version
+      placeholder: "15.6.153"
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Screenshots, logs, anything else
