@@ -8,6 +8,7 @@ Two small Android apps built on Android Auto's own head unit mode:
 Both are free, with no ads, accounts or tracking.
 
 [Download](https://github.com/rPlayAI/tarplay-public/releases/latest) ·
+[User guide](docs/user-guide.md) ·
 [Report a problem](https://github.com/rPlayAI/tarplay-public/issues/new/choose) ·
 [Release notes](docs/releases.md)
 
@@ -19,6 +20,9 @@ This repository is for **releases, documentation and issues**. The source code i
 </p>
 
 ## Install
+
+The short version is below. The [user guide](docs/user-guide.md) has every step, one-tap start, CarCast Launcher and troubleshooting.
+
 
 1. Download the APK from [Releases](https://github.com/rPlayAI/tarplay-public/releases/latest) and open it on your phone. Allow installs from your browser or file manager when Android asks.
 2. Install **Android Auto** from Google Play if your phone doesn't have it.
