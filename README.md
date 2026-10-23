@@ -1,11 +1,12 @@
-# PhoneAuto and CarCast Launcher
+# PhoneAuto, CarCast Launcher and TarPlay Tesla
 
-Two small Android apps built on Android Auto's own head unit mode:
+Small Android apps built on Android Auto's own head unit mode:
 
 - **PhoneAuto** runs the full Android Auto car display on your phone's own screen, in **portrait or landscape**. It brings back the "Android Auto for phone screens" experience: big buttons, a driving dashboard, Maps, music, calls, messages and Google Assistant.
 - **CarCast Launcher** connects your phone's Android Auto to a [CarCast](https://github.com/rPlayAI/carcast-public) receiver over Wi-Fi, with no cable.
+- **TarPlay Tesla** shows your phone's Android Auto in your **Tesla's browser**, over the phone's hotspot. No app on the car, no account.
 
-Both are free, with no ads, accounts or tracking.
+All are free, with no ads, accounts or tracking.
 
 [Download](https://github.com/rPlayAI/tarplay-public/releases/latest) ·
 [User guide](docs/user-guide.md) ·
@@ -17,6 +18,7 @@ This repository is for **releases, documentation and issues**. The source code i
 <p>
   <img src="screenshots/phoneauto-portrait.png" height="360" alt="PhoneAuto in portrait">
   <img src="screenshots/carcast-setup.png" height="360" alt="CarCast Launcher setup">
+  <img src="screenshots/tarplay-tesla.png" height="360" alt="TarPlay Tesla">
 </p>
 <p>
   <img src="screenshots/phoneauto-landscape.png" width="640" alt="PhoneAuto in landscape with Maps">
@@ -42,9 +44,13 @@ Open PhoneAuto, switch on **Portrait mode** if you want it, and tap **Start Andr
 
 Open CarCast Launcher on a phone that's on the same Wi-Fi as your CarCast receiver. The receiver finds the phone and Android Auto appears on its screen.
 
+### TarPlay Tesla
+
+Open TarPlay, turn on the phone's hotspot, connect the car to it (**Controls › Wi-Fi**), and tap **Start**. Then open **https://v.tarplay.com:8081** in the Tesla browser. Details in the [user guide](docs/user-guide.md#tarplay-tesla).
+
 ### One-tap start (optional)
 
-The APK builds can start Android Auto's head unit server for you through an accessibility service. On Android 13 and later, sideloaded apps need **restricted settings** allowed first: Settings › Apps › PhoneAuto (or CarCast Launcher) › ⋮ › **Allow restricted settings**, then turn the app on under Settings › Accessibility. You can skip this and start the head unit server by hand.
+The APK builds can start Android Auto's head unit server for you through an accessibility service. On Android 13 and later, sideloaded apps need **restricted settings** allowed first: Settings › Apps › PhoneAuto (or CarCast Launcher, TarPlay) › ⋮ › **Allow restricted settings**, then turn the app on under Settings › Accessibility. You can skip this and start the head unit server by hand.
 
 ## APK builds and Google Play
 
@@ -54,7 +60,7 @@ They are signed with a different key from the Google Play versions, so you can't
 
 ## FAQ
 
-**Is it safe?** Nothing leaves your phone. PhoneAuto talks to Android Auto on the same phone (127.0.0.1); CarCast Launcher only talks to devices on your own Wi-Fi. Privacy policies: [PhoneAuto](https://download.youcast.cn/phoneauto-privacy.html) · [CarCast Launcher](https://download.youcast.cn/carcast-privacy.html).
+**Is it safe?** Nothing leaves your phone. PhoneAuto talks to Android Auto on the same phone (127.0.0.1); CarCast Launcher only talks to devices on your own Wi-Fi; TarPlay Tesla only to the car on your phone's hotspot (it fetches the v.tarplay.com certificate from the internet). Privacy policies: [PhoneAuto](https://download.youcast.cn/phoneauto-privacy.html) · [CarCast Launcher](https://download.youcast.cn/carcast-privacy.html).
 
 **"Start head unit server" is missing.** Developer mode isn't on yet. Keep tapping *Version* in Android Auto settings until it says developer mode is enabled.
 
@@ -68,4 +74,4 @@ They are signed with a different key from the Google Play versions, so you can't
 
 ---
 
-PhoneAuto and CarCast Launcher are independent apps and are not affiliated with or endorsed by Google. Android Auto is a trademark of Google LLC.
+PhoneAuto, CarCast Launcher and TarPlay are independent apps and are not affiliated with or endorsed by Google or Tesla. Android Auto is a trademark of Google LLC. Tesla is a trademark of Tesla, Inc.
