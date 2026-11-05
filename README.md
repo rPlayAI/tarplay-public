@@ -38,7 +38,7 @@ The short version is below. The [user guide](docs/user-guide.md) has every step,
 
 ### PhoneAuto
 
-Open PhoneAuto, switch on **Portrait mode** if you want it, and tap **Start Android Auto**. Tap ✕ to end the session.
+Open PhoneAuto, switch on **Portrait mode** if you want it, and tap **Start Android Auto**. To end the session, touch the screen to show ✕, then tap it.
 
 ### CarCast Launcher
 
@@ -54,7 +54,7 @@ The APK builds can start Android Auto's head unit server for you through an acce
 
 ## APK builds and Google Play
 
-The APKs here are **beta builds that stop working on the date in the file name** (e.g. `PhoneAuto-beta-2027-01-19.apk`). Download a newer release before then.
+The APKs here are **beta builds that stop working on the date in the file name** (e.g. `PhoneAuto-beta-2027-02-03.apk`). Download a newer release before then.
 
 They are signed with a different key from the Google Play versions, so you can't update between them. Uninstall one before installing the other.
 

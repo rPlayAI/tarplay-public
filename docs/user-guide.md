@@ -5,7 +5,7 @@ PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast La
 - [What you need](#what-you-need)
 - [Install](#install)
 - [One-time setup: Android Auto developer mode](#one-time-setup-android-auto-developer-mode)
-- [PhoneAuto](#phoneauto): [start a session](#start-a-session) · [portrait or landscape](#portrait-or-landscape) · [during a session](#during-a-session) · [end a session](#end-a-session)
+- [PhoneAuto](#phoneauto): [start a session](#start-a-session) · [portrait or landscape](#portrait-or-landscape) · [icon and text size](#icon-and-text-size) · [during a session](#during-a-session) · [end a session](#end-a-session)
 - [One-tap start (optional)](#one-tap-start-optional)
 - [CarCast Launcher](#carcast-launcher)
 - [TarPlay Tesla](#tarplay-tesla)
@@ -63,7 +63,13 @@ You need to start the head unit server again after the phone restarts or Android
 
 <img src="../screenshots/phoneauto-landscape.png" width="560" alt="PhoneAuto in landscape">
 
+On a foldable's inner screen, **Portrait mode on** fills the screen in portrait.
+
 The choice applies when a session starts. To switch, [end the session](#end-a-session), change the switch, and start again.
+
+### Icon and text size
+
+In portrait, Android Auto's UI is a little smaller than in a car, because Google Maps only opens its search panel when Android Auto's screen is wide enough. For bigger icons and text, turn on **Larger icons and text** before you start. In portrait, Maps search may not open with it on.
 
 ### During a session
 
@@ -75,7 +81,7 @@ PhoneAuto shows exactly what a car would: tap apps in the bar or the app grid, u
 
 ### End a session
 
-Tap **✕** in the top corner. You're back on PhoneAuto's start screen.
+Touch the screen to show **✕** in the top corner, then tap it. You're back on PhoneAuto's start screen. (✕ hides itself after a few seconds so it doesn't cover Android Auto.)
 
 ## One-tap start (optional)
 
@@ -146,6 +152,12 @@ Google Maps needs location permission: **Settings › Apps › Maps › Permissi
 **PhoneAuto says "Permissions required".**
 Tap **Start Android Auto** again and allow the permissions, or open **Settings › Apps › PhoneAuto › Permissions** and allow location, microphone and nearby devices.
 
+**Start says Android Auto isn't installed.**
+PhoneAuto runs Android Auto on the same phone, so install Android Auto from Google Play first. To show a phone's Android Auto on a tablet or another screen, use CarCast Launcher with a CarCast receiver instead.
+
+**Tapping Search in Maps does nothing (portrait).**
+Turn off **Larger icons and text**, end the session with **✕** and start again.
+
 **Portrait mode shows the landscape layout.**
 End the session with **✕**, make sure **Portrait mode** is on, and start again. The choice only applies when a session starts.
 
@@ -157,7 +169,7 @@ Open your phone's Settings app, search for "Android Auto", and open the result.
 
 ## Updates and expiry
 
-- The APKs here are **beta builds** and stop working on the date in the file name (for example `PhoneAuto-beta-2027-01-19.apk`). Install a newer one from [Releases](https://github.com/rPlayAI/tarplay-public/releases) before then; it installs over the old one and keeps your settings.
+- The APKs here are **beta builds** and stop working on the date in the file name (for example `PhoneAuto-beta-2027-02-03.apk`). Install a newer one from [Releases](https://github.com/rPlayAI/tarplay-public/releases) before then; it installs over the old one and keeps your settings.
 - The Google Play versions don't expire and update through Play.
 - APK and Google Play versions are signed differently, so one can't update the other. To switch, uninstall the one you have first.
 
