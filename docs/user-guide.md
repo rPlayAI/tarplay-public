@@ -20,7 +20,7 @@ PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast La
 - **Android Auto** from Google Play. Recent phones have it built in.
 - For CarCast Launcher: a CarCast receiver (an Android head unit, tablet, iPad or iPhone running [CarCast](https://github.com/rPlayAI/carcast-public)) on the same Wi-Fi.
 - For TarPlay Tesla: a phone with mobile data and hotspot, and a Tesla with the in-car browser.
-- For TarPlay Receiver: an Android tablet or head unit (Android 7.0 or later) with Bluetooth and **5 GHz Wi-Fi**, and a phone with Android 11 or later for wireless Android Auto.
+- For TarPlay Receiver: an Android tablet or head unit (Android 7.0 or later; Android 5.0 or later with the Android5 APK) with Bluetooth and **5 GHz Wi-Fi**, and a phone with Android 11 or later for wireless Android Auto.
 
 ## Install
 
@@ -28,7 +28,7 @@ PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast La
    - `PhoneAuto-beta-….apk` for Android Auto on the phone screen;
    - `CarCastLauncher-beta-….apk` for a CarCast receiver;
    - `TarPlay-Tesla-beta-….apk` for your Tesla's screen;
-   - `TarPlay-Receiver-beta-….apk` on a **tablet or head unit**, to show a phone's Android Auto there.
+   - `TarPlay-Receiver-beta-….apk` on a **tablet or head unit**, to show a phone's Android Auto there. For a head unit on Android 5 or 6, take `TarPlay-Receiver-Android5-beta-….apk` instead; it's the same app and installs over the other one.
 2. Open the downloaded file. If Android asks, allow installs from your browser or file manager, then tap **Install**.
 3. If Google Play Protect warns that the app is unknown, tap **More details › Install anyway**. That warning appears for any app not installed from Google Play.
 

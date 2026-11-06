@@ -57,6 +57,8 @@ Open TarPlay, turn on the phone's hotspot, connect the car to it (**Controls ›
 
 Install it on the **tablet or head unit**, not the phone. Tap **Pair a phone**, pick your phone and confirm the code on both, then enter the Wi-Fi password once (Settings › Phones). Tap the phone and Android Auto starts over Wi-Fi, as in a car with wireless Android Auto. The phone needs Android 11 or later and the Wi-Fi must be **5 GHz**: home Wi-Fi, or the head unit's own hotspot (enter its BSSID too). Or plug the phone in with a USB cable. Details in the [user guide](docs/user-guide.md#tarplay-receiver).
 
+Head units on **Android 5 or 6** (such as CarCast units): use `TarPlay-Receiver-Android5-beta-….apk` instead. It's the same app built for older Android.
+
 ### One-tap start (optional)
 
 The APK builds can start Android Auto's head unit server for you through an accessibility service. On Android 13 and later, sideloaded apps need **restricted settings** allowed first: Settings › Apps › PhoneAuto (or CarCast Launcher, TarPlay) › ⋮ › **Allow restricted settings**, then turn the app on under Settings › Accessibility. You can skip this and start the head unit server by hand.
