@@ -1,6 +1,6 @@
 # User guide
 
-PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast Launcher sends your phone's Android Auto to a CarCast receiver over Wi-Fi. TarPlay Tesla shows your phone's Android Auto in your Tesla's web browser. All three use Android Auto's built-in **head unit server**, so you need to set that up once.
+PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast Launcher sends your phone's Android Auto to a CarCast receiver over Wi-Fi. TarPlay Tesla shows your phone's Android Auto in your Tesla's web browser. These three use Android Auto's built-in **head unit server**, so you need to set that up once. TarPlay Receiver works the other way round: it runs on a tablet or head unit and shows a phone's Android Auto there, over Bluetooth and Wi-Fi or USB, with no setup on the phone.
 
 - [What you need](#what-you-need)
 - [Install](#install)
@@ -9,6 +9,7 @@ PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast La
 - [One-tap start (optional)](#one-tap-start-optional)
 - [CarCast Launcher](#carcast-launcher)
 - [TarPlay Tesla](#tarplay-tesla)
+- [TarPlay Receiver](#tarplay-receiver): [Bluetooth](#bluetooth-wireless-nothing-to-install-on-the-phone) · [USB](#usb-cable) · [CarCast Launcher](#carcast-launcher-on-the-phone) · [display](#display) · [troubleshooting](#receiver-troubleshooting)
 - [Troubleshooting](#troubleshooting)
 - [Updates and expiry](#updates-and-expiry)
 - [Privacy](#privacy) · [Reporting a problem](#reporting-a-problem)
@@ -19,13 +20,15 @@ PhoneAuto runs Android Auto's car display on your phone's own screen. CarCast La
 - **Android Auto** from Google Play. Recent phones have it built in.
 - For CarCast Launcher: a CarCast receiver (an Android head unit, tablet, iPad or iPhone running [CarCast](https://github.com/rPlayAI/carcast-public)) on the same Wi-Fi.
 - For TarPlay Tesla: a phone with mobile data and hotspot, and a Tesla with the in-car browser.
+- For TarPlay Receiver: an Android tablet or head unit (Android 7.0 or later) with Bluetooth and **5 GHz Wi-Fi**, and a phone with Android 11 or later for wireless Android Auto.
 
 ## Install
 
 1. Download the APK from [Releases](https://github.com/rPlayAI/tarplay-public/releases/latest) on your phone:
    - `PhoneAuto-beta-….apk` for Android Auto on the phone screen;
    - `CarCastLauncher-beta-….apk` for a CarCast receiver;
-   - `TarPlay-Tesla-beta-….apk` for your Tesla's screen.
+   - `TarPlay-Tesla-beta-….apk` for your Tesla's screen;
+   - `TarPlay-Receiver-beta-….apk` on a **tablet or head unit**, to show a phone's Android Auto there.
 2. Open the downloaded file. If Android asks, allow installs from your browser or file manager, then tap **Install**.
 3. If Google Play Protect warns that the app is unknown, tap **More details › Install anyway**. That warning appears for any app not installed from Google Play.
 
@@ -130,7 +133,72 @@ If the phone is also on Wi-Fi, TarPlay shows a second, local address. That one i
 
 If you open the page on a second screen, the newest one takes over and the older one says *Android Auto is showing on another screen*. Reload the page on the screen you want.
 
-### Troubleshooting
+### TarPlay Receiver
+
+TarPlay Receiver runs on an Android tablet or head unit and shows a phone's Android Auto there, like the screen in a car. There are three ways to connect a phone.
+
+<img src="../screenshots/tarplay-receiver.png" width="640" alt="TarPlay Receiver start screen: a paired phone, Pair another, Add by address">
+
+Tap **How to connect a phone** on the start screen for a short version of the steps below.
+
+<img src="../screenshots/receiver-connect.png" width="640" alt="How to connect a phone">
+
+### Bluetooth (wireless, nothing to install on the phone)
+
+1. On the receiver, tap **Pair a phone**. Open Bluetooth settings on the phone so it can be found, pick it in the list, and confirm that the code matches on both. Pair from the receiver, not from the phone's settings.
+   <img src="../screenshots/receiver-phones.png" width="640" alt="Settings › Phones: paired phones, Pair a phone, Forget">
+
+2. Open **Settings › Phones** on the receiver and enter the Wi-Fi password once. The Wi-Fi name fills in by itself: it's the network the receiver is on.
+3. Tap the phone on the start screen. The phone joins that Wi-Fi and Android Auto appears, as in a car with wireless Android Auto. Next time it connects again by itself.
+
+The phone needs Android 11 or later, and the Wi-Fi must be **5 GHz**: on 2.4 GHz wireless Android Auto starts but drops after a few seconds.
+
+**Which Wi-Fi.** Any 5 GHz network both can reach: home Wi-Fi, another phone's hotspot, or the receiver's own hotspot.
+
+<img src="../screenshots/receiver-wifi.png" width="640" alt="Settings › Phones: Wi-Fi name, password and hotspot BSSID">
+
+**The receiver's own hotspot**, as in a car (the head unit is the Wi-Fi):
+
+1. Turn on the hotspot on the head unit or tablet and set it to **5 GHz**.
+2. In **Settings › Phones**, enter the hotspot's **name** and **password**, and its **BSSID**. Android Auto needs the BSSID, and Android doesn't let apps read it.
+3. To find the BSSID, look at the hotspot from another Android phone: a Wi-Fi scanner app (such as WiFiAnalyzer) lists each network with its BSSID. On a Pixel you can also turn on Developer options › **Wi-Fi verbose logging** and open the network in Wi-Fi settings. Use the 5 GHz entry if the hotspot shows two. (An iPhone's "Wi-Fi Address" is the iPhone's own address, not the BSSID.)
+4. Some hotspots pick a new BSSID each time they're turned on. If yours does, set its MAC address to the device's own (if the hotspot settings offer it), or update the BSSID when it changes.
+
+### USB cable
+
+Plug the phone into the receiver with a data cable and allow TarPlay Receiver when asked. Android Auto starts on the receiver.
+
+### CarCast Launcher on the phone
+
+Phones running [CarCast Launcher](#carcast-launcher) on the same Wi-Fi appear on the start screen by themselves; tap one to connect. You can also tap **Add by address** and type the phone's IP. This needs Android Auto's head unit server on the phone, like the other apps.
+
+### During a session
+
+Use Android Auto's **Exit** (in the app grid) to go back to the start screen; Android Auto keeps running and **Back to Android Auto** returns to it. **Disconnect** ends the session. To use a different phone, tap it on the start screen.
+
+### Display
+
+<img src="../screenshots/receiver-display.png" width="640" alt="Settings › Display">
+
+**Settings › Display** sets the resolution Android Auto draws at, the driving side, and **Fill the screen** (on by default: no black bars on screens that aren't 16:9). A **custom size** draws Android Auto at exactly that size; leave it empty for the normal full screen.
+
+### Receiver troubleshooting
+
+**"Couldn't find the network… 5 GHz".** The phone couldn't find the Wi-Fi name the receiver handed it, or the network is 2.4 GHz only. Check the name in Settings › Phones (hotspot names are easy to mistype) and use a 5 GHz network. With the receiver's own hotspot, also check the BSSID: it may have changed when the hotspot was turned on again.
+
+**"Enter its BSSID".** The Wi-Fi name in Settings › Phones is the receiver's own hotspot. Enter its BSSID (see [Bluetooth](#bluetooth-wireless-nothing-to-install-on-the-phone)), or clear the name to use the network the receiver is on.
+
+**"Couldn't join… Check the Wi-Fi password".** Re-enter the password in Settings › Phones.
+
+**"Couldn't reach" the phone, or it stays on "Waiting for Android Auto".** The receiver reconnects Bluetooth by itself a few times. If it still doesn't start, turn the phone's Bluetooth off and on. If the phone no longer lists the receiver (it was paired with another screen since), **Forget** it in Settings › Phones and pair again. A phone can start wireless Android Auto with only one screen at a time; turn off other receivers it's paired with.
+
+**Android Auto drops after a few seconds.** The Wi-Fi link is too weak or on 2.4 GHz. Move closer or use a 5 GHz network.
+
+**Small window instead of full screen.** Clear the custom size in Settings › Display.
+
+**Maps search or music says "Offline".** During wireless Android Auto the phone reaches the internet over its **mobile data**: the Wi-Fi it joins is a link to the screen, as in a car. A phone without mobile data (no SIM) can't search or stream in a session; maps it already has still show.
+
+## Troubleshooting
 
 **The page doesn't load.** Check that the car (or the device you're testing with) is on the phone's hotspot, not on another Wi-Fi, and that you tapped **Start**. On an iPhone or Mac used for testing, turn off **iCloud Private Relay** and **Limit IP Address Tracking** for the hotspot network; they bypass the hotspot's address lookup.
 
@@ -169,7 +237,7 @@ Open your phone's Settings app, search for "Android Auto", and open the result.
 
 ## Updates and expiry
 
-- The APKs here are **beta builds** and stop working on the date in the file name (for example `PhoneAuto-beta-2027-02-03.apk`). Install a newer one from [Releases](https://github.com/rPlayAI/tarplay-public/releases) before then; it installs over the old one and keeps your settings.
+- The APKs here are **beta builds** and stop working on the date in the file name (for example `PhoneAuto-beta-2027-02-03.apk` or `TarPlay-Receiver-beta-2027-02-03.apk`). Install a newer one from [Releases](https://github.com/rPlayAI/tarplay-public/releases) before then; it installs over the old one and keeps your settings.
 - The Google Play versions don't expire and update through Play.
 - APK and Google Play versions are signed differently, so one can't update the other. To switch, uninstall the one you have first.
 

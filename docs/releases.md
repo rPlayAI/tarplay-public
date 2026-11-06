@@ -1,5 +1,16 @@
 # Release notes
 
+## TarPlay Receiver 1.1 beta (2026-11-05)
+
+- **TarPlay Receiver 1.1 (4):** first public build. An Android tablet or head unit becomes an Android Auto screen:
+  - **Bluetooth:** pair a phone once, and wireless Android Auto starts over Wi-Fi with nothing to install on the phone (Android 11+, 5 GHz Wi-Fi).
+  - **USB:** plug the phone in.
+  - **CarCast Launcher:** phones running it on the same Wi-Fi show up by themselves.
+  - **The head unit's own hotspot** works for Bluetooth phones, as in a car: enter its name, password and BSSID in Settings › Phones.
+  - Reconnects Bluetooth by itself if the phone doesn't start Android Auto.
+  - Fills screens that aren't 16:9, including near-square ones (foldables) in portrait. Custom size, resolution and driving side in Settings › Display.
+  - Stops working on 2027-02-03.
+
 ## v1.0-beta.2 (2026-11-05)
 
 - **PhoneAuto 1.1 (4):**
