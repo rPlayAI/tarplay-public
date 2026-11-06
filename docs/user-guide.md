@@ -76,6 +76,8 @@ In portrait, Android Auto's UI is a little smaller than in a car, because Google
 
 ### During a session
 
+<img src="../screenshots/receiver-android-auto.png" width="640" alt="Android Auto from a phone on the receiver's screen">
+
 PhoneAuto shows exactly what a car would: tap apps in the bar or the app grid, use **Maps**, **Waze**, music apps, **Phone** and **Messages**, and tap the microphone for Google Assistant or Gemini.
 
 - The screen stays on during a session.

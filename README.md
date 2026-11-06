@@ -23,6 +23,7 @@ This repository is for **releases, documentation and issues**. The source code i
 </p>
 <p>
   <img src="screenshots/tarplay-receiver.png" width="640" alt="TarPlay Receiver start screen on a tablet">
+  <img src="screenshots/receiver-android-auto.png" width="640" alt="Android Auto from a phone, shown by TarPlay Receiver">
 </p>
 <p>
   <img src="screenshots/phoneauto-landscape.png" width="640" alt="PhoneAuto in landscape with Maps">
