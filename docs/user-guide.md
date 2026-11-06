@@ -76,8 +76,6 @@ In portrait, Android Auto's UI is a little smaller than in a car, because Google
 
 ### During a session
 
-<img src="../screenshots/receiver-android-auto.png" width="640" alt="Android Auto from a phone on the receiver's screen">
-
 PhoneAuto shows exactly what a car would: tap apps in the bar or the app grid, use **Maps**, **Waze**, music apps, **Phone** and **Messages**, and tap the microphone for Google Assistant or Gemini.
 
 - The screen stays on during a session.
@@ -175,6 +173,8 @@ Plug the phone into the receiver with a data cable and allow TarPlay Receiver wh
 Phones running [CarCast Launcher](#carcast-launcher) on the same Wi-Fi appear on the start screen by themselves; tap one to connect. You can also tap **Add by address** and type the phone's IP. This needs Android Auto's head unit server on the phone, like the other apps.
 
 ### During a session
+
+<img src="../screenshots/receiver-android-auto.png" width="640" alt="Android Auto from a phone on the receiver's screen">
 
 Use Android Auto's **Exit** (in the app grid) to go back to the start screen; Android Auto keeps running and **Back to Android Auto** returns to it. **Disconnect** ends the session. To use a different phone, tap it on the start screen.
 
